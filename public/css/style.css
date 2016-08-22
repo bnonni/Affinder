@@ -68,12 +68,6 @@ header nav ul li{
 header nav ul li a{
   text-decoration: none;
   color: darkgray
-
-}
-
-#main-contain{
-  width: 640px;
-  height: 750px
 }
 
 button{
@@ -99,17 +93,25 @@ nav a:hover{
 }
 
 button p{
-  margin: 0;
+  margin: auto;
   padding: 0;
 }
 
-#img-contain{
-  width: 100%;
+.img-contain{
+  width: 640px;
+  height: 430px;
   background: url(../images/payToFind.jpg) no-repeat center top;
   background-size: cover;
-  padding: 50%;
-  display: flex;
-  justify-content: center;
+}
+
+.img-contain h3{
+  color: midnightblue;
+  margin: auto;
+  text-align: center;
+  padding-top: 30px
+}
+.img-contain button{
+  margin-left: 200px;
 }
 
 footer nav ul{
