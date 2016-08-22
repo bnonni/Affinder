@@ -100,8 +100,9 @@ button p{
 .img-contain{
   width: 640px;
   height: 430px;
-  background: url(../images/payToFind.jpg) no-repeat center top;
+  background: url(../images/find.jpg) no-repeat center top;
   background-size: cover;
+  border: 1px solid midnightblue;
 }
 
 .img-contain h3{
@@ -114,22 +115,43 @@ button p{
   margin-left: 200px;
 }
 
-footer nav ul{
-  padding-left: 200px
+.img-contain-two{
+  margin: auto;
+  width: 640px;
+  height: 230px;
+  background: url(../images/sky.jpg) no-repeat center top;
+  background-size: cover;
 }
 
-footer nav ul li{
+section{
+  border: 1px solid midnightblue;
+}
+
+section h2{
+  color: midnightblue;
+  padding-left: 50px
+}
+
+section ul li{
+  color: midnightblue;
+  padding-left: 50px;
+}
+
+footer nav ul{
+  /*padding-left: 200px*/
+}
+
+/*footer nav ul li{
   font-size: 18px;
   display: inline-block;
   font-weight: bold;
   list-style-type: none;
   padding: 0 0 0 30px;
-}
+}*/
 
 footer nav ul li a{
   text-decoration: none;
   color: darkgray
-
 }
 
 footer{
