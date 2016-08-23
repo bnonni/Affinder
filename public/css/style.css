@@ -43,18 +43,23 @@ body{
 }
 
 header{
-    height: 120px;
+    height: 125px;
     background-color: midnightblue;
     padding-top: 5px;
 }
 
 h1{
-   margin: 0; 
-   padding: 5px 0 0 5px;
+  padding-left: 20px;
+  float: left
+}
+
+h1:hover{
+
 }
 
 header nav ul{
-  padding-left: 200px
+  padding-left: 250px;
+  padding-top: 65px
 }
 
 header nav ul li{
@@ -70,6 +75,15 @@ header nav ul li a{
   color: darkgray
 }
 
+nav a:hover{
+  background-color: darkgray;
+  border-radius: 20px;
+  padding: 2px;
+  color: midnightblue;
+  font-style: italic;
+
+}
+
 button{
   margin: 0;
   background-color: midnightblue;
@@ -77,54 +91,52 @@ button{
   font-size: 20px;
   font-family: 'Open Sans', Arial, Helvetica, sans-serif;
   border-radius: 10px;
-  padding: 5px 20px 5px 20px;
+  padding: 10px 20px;
   outline: none;
+}
+
+button:hover{
+  background-color: white;
+  color: midnightblue;
+  border: 2px solid midnightblue;
+  font-style: italic;
 }
 
 h3 div a{
    text-decoration: none;
 }
 
-nav a:hover{
-  background-color: darkgray;
-  border-radius: 10px;
-  transition: 1s;
-  color: midnightblue
-}
-
-button p{
-  margin: auto;
-  padding: 0;
-}
-
 .img-contain{
   width: 640px;
   height: 430px;
-  background: url(../images/find.jpg) no-repeat center top;
+  background: url(../images/mtns.jpg) no-repeat center top;
   background-size: cover;
   border: 1px solid midnightblue;
 }
 
+.img-contain div{    
+  padding-left: 254px;
+  padding-top: 15px;
+}
+
 .img-contain h3{
   color: midnightblue;
-  margin: auto;
   text-align: center;
-  padding-top: 30px
-}
-.img-contain button{
-  margin-left: 200px;
+  padding-top: 30px;
+  padding-left: 20px;
+  margin-top: 50px;
 }
 
 .img-contain-two{
   margin: auto;
   width: 640px;
   height: 230px;
-  background: url(../images/sky.jpg) no-repeat center top;
+  background: url(../images/mtns.jpg) no-repeat center top;
   background-size: cover;
 }
 
-section{
-  border: 1px solid midnightblue;
+section ul li{
+  list-style-type: none;
 }
 
 section h2{
@@ -138,16 +150,16 @@ section ul li{
 }
 
 footer nav ul{
-  /*padding-left: 200px*/
+  padding-left: 200px
 }
 
-/*footer nav ul li{
+footer nav ul li{
   font-size: 18px;
   display: inline-block;
   font-weight: bold;
   list-style-type: none;
   padding: 0 0 0 30px;
-}*/
+}
 
 footer nav ul li a{
   text-decoration: none;
@@ -160,8 +172,10 @@ footer{
   background-color: midnightblue;
 }
 
-/*Mobile
+
+/*----------------------Mobile----------------------*/
 @media(min-width: 750px){
+
 body{
   width: 960px;
   padding:0;
@@ -172,9 +186,13 @@ body{
 }
 
 header{
-    height: 120px;
-    background-color: midnightblue;
-    padding-top: 5px;
+  height: 120px;
+  background-color: midnightblue;
+  padding-top: 5px;
+}
+
+header nav ul{
+  padding-left: 550px
 }
 
 header nav ul li{
@@ -184,10 +202,37 @@ header nav ul li{
   list-style-type: none;
   padding: 0 0 0 30px;
 }
+
+.img-contain div{    
+  padding-left: 418px;
 }
 
-/*Tablet & Desktop
-@media(min-width: 1200px){
+.img-contain{
+  width: 960px;
+  height: 650px;
+  background: url(../images/mtns.jpg) no-repeat center top;
+  background-size: cover;
+  border: 1px solid midnightblue;
+}
+
+.img-contain h3{
+  font-style: italic;
+  font-size: 25px;
+  padding-top: 80px;
+  padding-left: 20px;
+  margin-top: 50px;
+}
+
+.img-contain-two{
+  margin: auto;
+  width: 960px;
+  height: 230px;
+  background: url(../images/mtns.jpg) no-repeat center top;
+  background-size: cover;
+}
+
+/*Tablet & Desktop*/
+/*@media(min-width: 1200px){
 body{
     height: 1000px;
     width: 1500px;
@@ -224,5 +269,4 @@ header nav ul li{
     font-weight: bold;
     list-style-type: none;
     padding: 0 0 0 30px;
-}
-}
+}*/
