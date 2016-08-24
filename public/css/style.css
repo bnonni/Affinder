@@ -39,7 +39,7 @@ body{
   margin: 0;
   background-color: lightgrey;
   color: darkgray;
-  font-family: 'Open Sans', Arial, Helvetica, sans-serif; 
+  font-family: 'Open Sans'; 
 }
 
 header{
@@ -89,7 +89,7 @@ button{
   background-color: midnightblue;
   color: darkgray;
   font-size: 20px;
-  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  font-family: 'Open Sans';
   border-radius: 10px;
   padding: 10px 20px;
   outline: none;
@@ -135,6 +135,14 @@ h3 div a{
   background-size: cover;
 }
 
+.img-contain-two p.quote{
+  font-weight: bold;
+  color: midnightblue;
+  padding: 50px 200px 0 180px;
+  text-align: center;
+  font-style: italic;
+}
+
 section ul li{
   list-style-type: none;
 }
@@ -172,6 +180,10 @@ footer{
   background-color: midnightblue;
 }
 
+footer a{
+  text-decoration: none;
+  font-size: 15px
+}
 
 /*----------------------Mobile----------------------*/
 @media(min-width: 750px){
@@ -182,7 +194,7 @@ body{
   margin: 0;
   background-color: lightgrey;
   color: darkgray;
-  font-family: 'Open Sans', Arial, Helvetica, sans-serif; 
+  font-family: 'Open Sans'; 
 }
 
 header{
@@ -223,6 +235,21 @@ header nav ul li{
   margin-top: 50px;
 }
 
+section h2{
+  color: midnightblue;
+  padding-left: 320px
+}
+
+section ul li{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  padding-right: 100px;
+   color: midnightblue;
+  padding-left: 60px;
+}
+
 .img-contain-two{
   margin: auto;
   width: 960px;
@@ -231,8 +258,26 @@ header nav ul li{
   background-size: cover;
 }
 
+.img-contain-two p.quote{
+  font-weight: bold;
+  color: midnightblue;
+  padding: 50px 250px 0 220px;
+  text-align: center;
+  font-style: italic;
+}
+
+.img-contain-two p{
+  font-weight: 800;
+  color: midnightblue;
+  text-align: center;
+  font-style: italic;
+  padding-left: 100px;
+  font-size: 18px
+}
+
+
 /*Tablet & Desktop*/
-/*@media(min-width: 1200px){
+@media(min-width: 1200px){
 body{
     height: 1000px;
     width: 1500px;
@@ -269,4 +314,4 @@ header nav ul li{
     font-weight: bold;
     list-style-type: none;
     padding: 0 0 0 30px;
-}*/
+}
