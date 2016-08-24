@@ -53,10 +53,6 @@ h1{
   float: left
 }
 
-h1:hover{
-
-}
-
 header nav ul{
   padding-left: 250px;
   padding-top: 65px
@@ -81,7 +77,6 @@ nav a:hover{
   padding: 2px;
   color: midnightblue;
   font-style: italic;
-
 }
 
 button{
@@ -131,16 +126,8 @@ h3 div a{
   margin: auto;
   width: 640px;
   height: 230px;
-  background: url(../images/mtns.jpg) no-repeat center top;
+  background: url(../images/mtns.jpg) no-repeat center bottom;
   background-size: cover;
-}
-
-.img-contain-two p.quote{
-  font-weight: bold;
-  color: midnightblue;
-  padding: 50px 200px 0 180px;
-  text-align: center;
-  font-style: italic;
 }
 
 section ul li{
@@ -149,12 +136,27 @@ section ul li{
 
 section h2{
   color: midnightblue;
-  padding-left: 50px
+  padding-left: 10px
 }
 
 section ul li{
   color: midnightblue;
-  padding-left: 50px;
+  padding-right: 192px;
+}
+
+.img-contain-two p.quote{
+  font-weight: bold;
+  color: white;
+  padding: 70px 0 0 0;
+  text-align: center;
+  font-style: italic;
+}
+.img-contain-two p{
+  font-weight: 800;
+  color: white;
+  text-align: center;
+  font-style: italic;
+  font-size: 18px;
 }
 
 footer nav ul{
@@ -185,9 +187,100 @@ footer a{
   font-size: 15px
 }
 
+#main #contact h3{
+  color: midnightblue;
+  padding-left: 20px
+}
+
+form{
+  height: 575px;
+  width: 500px
+}
+
+label{
+  color: midnightblue;
+  font-weight: 600;
+  display: block;
+  margin-right: 100px;
+  clear: both;
+  float: left;
+  line-height: 80px;
+  padding-left: 50px;
+  outline: none;
+}
+
+#name{
+  margin-top: 31px
+}
+
+#email{
+  margin-top: 31px
+}
+
+#phone{
+  margin-top: 31px
+}
+
+#state{
+  margin-top: 31px
+}
+
+select{
+ height: 45px;
+ padding-left: 50px;
+ margin-top: 500px
+}
+
+#password{
+  margin-top: 31px
+}
+
+#terms{
+   margin-top: 67px;
+   position: relative;
+   right: 126px
+}
+
+#terms-box{
+    margin-top: 113px;
+    margin-left: -146px;
+}
+
+input, select{
+  float: right;
+  border: none;
+  border-bottom: solid 1px #000;
+  line-height: 80px;
+}
+
+ul li{
+  clear: both;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+
+input[type="checkbox"]{
+  float: left;
+}
+
+input[type="checkbox"] + label{
+  clear: none;
+  margin-top: 10px;
+  display: inline-block;
+  line-height: 0;
+  padding: 0;
+}
+
+input[type="submit"]{
+  background-color: midnightblue;
+  border: solid 1px white;
+  font-size: 14px;
+  color: #fff;
+  margin-top: -15px;
+}
+
 /*----------------------Mobile----------------------*/
 @media(min-width: 750px){
-
 body{
   width: 960px;
   padding:0;
@@ -276,11 +369,60 @@ section ul li{
 }
 
 
-/*Tablet & Desktop*/
-@media(min-width: 1200px){
+form{
+  margin-left: 25px;
+  height: 575px;
+}
+
+label{
+  display: block;
+  margin-right: 100px;
+  clear: both;
+  float: left;
+  line-height: 60px;
+}
+
+input, select{
+  float: right;
+  border: none;
+  border-bottom: solid 1px #000;
+  line-height: 40px;
+}
+
+select{
+ height: 45px;
+}
+
+ul li{
+  clear: both;
+  line-height: 20px;
+  margin-bottom: 10px
+}
+
+input[type="radio"], input[type="checkbox"]{
+  float: left;
+}
+
+input[type="checkbox"] + label{
+  clear: none;
+  margin-top: 10px;
+  display: inline-block;
+  line-height: 0;
+  padding: 0;
+}
+
+input[type="submit"]{
+  background-color: midnightblue;
+  border: solid 1px white;
+  font-size: 14px;
+  color: #fff
+}
+
+/*----------------------Tablet & Desktop----------------------*/
+/*@media(min-width: 1200px){
 body{
     height: 1000px;
-    width: 1500px;
+    width: 1440px;
     padding:0;
     margin: 0;
     background-color: lightgrey;
@@ -315,3 +457,52 @@ header nav ul li{
     list-style-type: none;
     padding: 0 0 0 30px;
 }
+
+form{
+  margin-left: 25px;
+  height: 575px;
+}
+
+label{
+  display: block;
+  margin-right: 100px;
+  clear: both;
+  float: left;
+  line-height: 60px;
+}
+
+input, select{
+  float: right;
+  border: none;
+  border-bottom: solid 1px #000;
+  line-height: 40px;
+}
+
+select{
+ height: 45px;
+}
+
+ul li{
+  clear: both;
+  line-height: 20px;
+  margin-bottom: 10px
+}
+
+input[type="radio"], input[type="checkbox"]{
+  float: left;
+}
+
+input[type="checkbox"] + label{
+  clear: none;
+  margin-top: 10px;
+  display: inline-block;
+  line-height: 0;
+  padding: 0;
+}
+
+input[type="submit"]{
+  background-color: midnightblue;
+  border: solid 1px white;
+  font-size: 14px;
+  color: #fff
+}*/

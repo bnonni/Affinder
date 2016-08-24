@@ -15,66 +15,55 @@
             <h1>Affinder</h1>
                 <nav>
                     <ul>
-                        <li><a href="#">Home</a></li>
+                        <li><a href="index.html">Home</a></li>
                         <li><a href="blog.html">Blog</a></li>
                         <li><a href="#about">About</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </nav>
         </header>
-    
-    
     <section id="main">
-			<div class="container">
-				<section id="contact">
-					<form action="register.html" method="POST">
-					<h3>Register Now!</h3>
-					<label for="name">Name:</label>
-					<input type="text" placeholder="John Doe" id="name" name="name" />
-					<label for="email">Email:</label>
-					<input type="email" placeholder="hello@gmail.com" id="email" name="email" />
-					<label for="phone">Phone:</label>
-					<input type="tel" placeholder="XXX-XXX-XXXX" id="phone" name='phone' />
-					<label for="state"> State:</label>
-					<select name="state" id="state">
-						<option value="AL">Alabama</option>
-                        <option value="AK">Alaska</option>
-                        <option value="AZ">Arizona</option>
-                        <option value="AR">Arkansas</option>
-                        <option value="CA">California</option>
-                        <option value="CO">Colorado</option>
-                        <option value="CT">Connecticut</option>
-                        <option value="DE">Delaware</option>
-                        <option value="FL">Florida</option>
-                        <option value="GA">Georgia</option>
-						<option value="HI">Hawaii</option>
-                        <option value="ID">Idaho</option>
-                        <option value="IL">Illinois</option>
-                        <option value="IN">Indiana</option>
-                        <option value="IA">Iowa</option>
-                        <option value="KS">Kansas</option>
-                        <option value="WY">Wyoming</option>
-					</select>
-					<label for="password">Password:</label>
-					<input type="password" placeholder="*********" id="password" name="password" />
-					<label for="service">Which service are you interested in?</label>
-					<ul>
-						<li><input type="radio" value="relaxing" id="service" name="service">Relaxing</li>
-						<li><input type="radio" value="email" id="service" name="service">Email</li>
-						<li><input type="radio" value="phone" id="service" name="service">Phone</li>
-					</ul>
-					<input type="checkbox" value="yes" name="terms" id="terms"><label for="terms">I agree to the terms</label>						
-					<input type="submit" value="Register Now!" />
-					</form>
-				</section>
-			</div>
-		</section>
-    
-    
+            <section id="contact">
+                <form action="register.html" method="POST">
+                <h3>Register Now!</h3>
+                    <label for="name">Name:</label>
+                        <input type="text" placeholder="John Doe" id="name" name="name" />
+                    <label for="email">Email:</label>
+                        <input type="email" placeholder="hello@gmail.com" id="email" name="email" />
+                    <label for="phone">Phone:</label>
+                        <input type="tel" placeholder="XXX-XXX-XXXX" id="phone" name='phone' />
+                    <label for="state"> State:</label>
+                        <select name="state" id="state">
+                            <option value="AL">Alabama</option>
+                            <option value="AK">Alaska</option>
+                            <option value="AZ">Arizona</option>
+                            <option value="AR">Arkansas</option>
+                            <option value="CA">California</option>
+                            <option value="CO">Colorado</option>
+                            <option value="CT">Connecticut</option>
+                            <option value="DE">Delaware</option>
+                            <option value="FL">Florida</option>
+                            <option value="GA">Georgia</option>
+                            <option value="HI">Hawaii</option>
+                            <option value="ID">Idaho</option>
+                            <option value="IL">Illinois</option>
+                            <option value="IN">Indiana</option>
+                            <option value="IA">Iowa</option>
+                            <option value="KS">Kansas</option>
+                            <option value="WY">Wyoming</option>
+                        </select>
+                    <label for="password">Password:</label>
+                        <input type="password" placeholder="*********" id="password" name="password" />
+                        <input type="checkbox" value="yes" name="terms" id="terms-box">
+                    <label for="terms" id="terms">I agree to the terms</label>						
+                        <input id="submit-btn" type="submit" value="Register Now!" />
+                </form>
+            </section>
+    </section>
     <footer>
-        <script src="scripts/jquery-3.1.0.min (1).js"/>
+        <script src="scripts/jquery-3.1.0.min (1).js"></script>
+        <script src="scripts/parsley.min.js"></script>
         <script src="scripts/index.js"/></script>
-        <script src="scripts/parley.min.js"></script>
     </footer>
 </body>
 </html>
