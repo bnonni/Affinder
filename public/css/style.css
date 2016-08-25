@@ -216,7 +216,7 @@ footer a{
 body{
   width: 960px;
   padding:0;
-  margin: 0;
+  margin: auto;
   background-color: lightgrey;
   color: darkgray;
   font-family: 'Open Sans'; 
@@ -311,7 +311,7 @@ section ul li{
 body{
     width: 1440px;
     padding:0;
-    margin: 0;
+    margin: auto;
     background-color: lightgrey;
     color: darkgray;
     font-family: 'Open Sans'; 
@@ -415,6 +415,7 @@ section ul li{
 
 @media(max-width:1201px){
   body{
-    margin: auto
+    margin: auto;
+    width: 100%;
   }
 }

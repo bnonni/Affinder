@@ -1,3 +1,8 @@
+/*Small Mobile*/
+article .post-one{
+    width: 100%
+}
+
 .find-contain{
     width: 100x;
 }
@@ -71,4 +76,11 @@ footer{
 footer a{
   text-decoration: none;
   font-size: 15px
+}
+
+/*Mobile*/
+@media(min-width: 750px){
+    body{
+        margin: auto;
+    }
 }

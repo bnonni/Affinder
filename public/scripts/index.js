@@ -19,19 +19,6 @@ function hideBlog(){
     $('.readmore').show();
 }
 
-function showBlogTwo(){
-    event.preventDefault();
-    $('#show-this-on-click-two').slideDown(1);
-    $('.readmore-two').hide();
-    $('.less').show();
-}
-
-function hideBlogTwo(){
-    event.preventDefault();
-    $('.hide-two').slideUp(1);
-    $('.readmore-two').show();
-}
-
 function validateForm(){
    event.preventDefault();
    console.log('work');
