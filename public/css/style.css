@@ -36,7 +36,7 @@ body{
   width: 640px;
   height: 960px;
   padding:0;
-  margin: 0;
+  margin: auto;
   background-color: lightgrey;
   color: darkgray;
   font-family: 'Open Sans'; 
@@ -187,96 +187,28 @@ footer a{
   font-size: 15px
 }
 
-#main #contact h3{
-  color: midnightblue;
-  padding-left: 20px
+.social-media{
+  display: flex;
+  justify-content: center;
+  padding-top: 50px
 }
 
-form{
-  height: 575px;
-  width: 500px
+.social-media a{
+  padding: 5px
 }
 
-label{
-  color: midnightblue;
-  font-weight: 600;
-  display: block;
-  margin-right: 100px;
-  clear: both;
-  float: left;
-  line-height: 80px;
-  padding-left: 50px;
-  outline: none;
+.social-media img#icon{
+    position: relative;
+    bottom: 36px;
+    left: 64px;
 }
 
-#name{
-  margin-top: 31px
+.hide{
+  display: none;
 }
 
-#email{
-  margin-top: 31px
-}
-
-#phone{
-  margin-top: 31px
-}
-
-#state{
-  margin-top: 31px
-}
-
-select{
- height: 45px;
- padding-left: 50px;
- margin-top: 500px
-}
-
-#password{
-  margin-top: 31px
-}
-
-#terms{
-   margin-top: 67px;
-   position: relative;
-   right: 126px
-}
-
-#terms-box{
-    margin-top: 113px;
-    margin-left: -146px;
-}
-
-input, select{
-  float: right;
-  border: none;
-  border-bottom: solid 1px #000;
-  line-height: 80px;
-}
-
-ul li{
-  clear: both;
-  line-height: 20px;
-  margin-bottom: 10px;
-}
-
-input[type="checkbox"]{
-  float: left;
-}
-
-input[type="checkbox"] + label{
-  clear: none;
-  margin-top: 10px;
-  display: inline-block;
-  line-height: 0;
-  padding: 0;
-}
-
-input[type="submit"]{
-  background-color: midnightblue;
-  border: solid 1px white;
-  font-size: 14px;
-  color: #fff;
-  margin-top: -15px;
+.hide-two{
+  display: none;
 }
 
 /*----------------------Mobile----------------------*/
@@ -329,8 +261,14 @@ header nav ul li{
 }
 
 section h2{
+  font-size: 35px;
   color: midnightblue;
-  padding-left: 320px
+  padding-left: 250px;
+  padding-top: 50px;
+}
+
+section ul{
+  padding-bottom: 50px
 }
 
 section ul li{
@@ -368,66 +306,15 @@ section ul li{
   font-size: 18px
 }
 
-
-form{
-  margin-left: 25px;
-  height: 575px;
-}
-
-label{
-  display: block;
-  margin-right: 100px;
-  clear: both;
-  float: left;
-  line-height: 60px;
-}
-
-input, select{
-  float: right;
-  border: none;
-  border-bottom: solid 1px #000;
-  line-height: 40px;
-}
-
-select{
- height: 45px;
-}
-
-ul li{
-  clear: both;
-  line-height: 20px;
-  margin-bottom: 10px
-}
-
-input[type="radio"], input[type="checkbox"]{
-  float: left;
-}
-
-input[type="checkbox"] + label{
-  clear: none;
-  margin-top: 10px;
-  display: inline-block;
-  line-height: 0;
-  padding: 0;
-}
-
-input[type="submit"]{
-  background-color: midnightblue;
-  border: solid 1px white;
-  font-size: 14px;
-  color: #fff
-}
-
 /*----------------------Tablet & Desktop----------------------*/
-/*@media(min-width: 1200px){
+@media(min-width: 1200px){
 body{
-    height: 1000px;
     width: 1440px;
     padding:0;
     margin: 0;
     background-color: lightgrey;
     color: darkgray;
-    font-family: 'Open Sans', Arial, Helvetica, sans-serif; 
+    font-family: 'Open Sans'; 
 }
 
 header{
@@ -458,51 +345,76 @@ header nav ul li{
     padding: 0 0 0 30px;
 }
 
-form{
-  margin-left: 25px;
-  height: 575px;
+
+.img-contain div{    
+  padding-left: 652px;
 }
 
-label{
-  display: block;
-  margin-right: 100px;
-  clear: both;
-  float: left;
-  line-height: 60px;
+.img-contain{
+  width: 1440px;
+  height: 650px;
+  background: url(../images/mtns.jpg) no-repeat center;
+  background-size: cover;
+  border: 1px solid midnightblue;
 }
 
-input, select{
-  float: right;
-  border: none;
-  border-bottom: solid 1px #000;
-  line-height: 40px;
+.img-contain h3{
+  font-style: italic;
+  font-size: 43px;
+  padding-top: 80px;
+  padding-left: 20px;
+  margin-top: 50px;
 }
 
-select{
- height: 45px;
+section h2{
+  font-size: 35px;
+  color: midnightblue;
+  padding-left: 482px;
+  padding-top: 50px;
 }
 
-ul li{
-  clear: both;
-  line-height: 20px;
-  margin-bottom: 10px
+section ul{
+  padding-bottom: 50px
 }
 
-input[type="radio"], input[type="checkbox"]{
-  float: left;
+section ul li{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  padding-right: 100px;
+   color: midnightblue;
+  padding-left: 60px;
+  font-size: 20px
 }
 
-input[type="checkbox"] + label{
-  clear: none;
-  margin-top: 10px;
-  display: inline-block;
-  line-height: 0;
-  padding: 0;
+.img-contain-two{
+  margin: auto;
+  width: 1440px;
+  height: 230px;
+  background: url(../images/mtns.jpg) no-repeat center top;
+  background-size: cover;
 }
 
-input[type="submit"]{
-  background-color: midnightblue;
-  border: solid 1px white;
-  font-size: 14px;
-  color: #fff
-}*/
+.img-contain-two p.quote{
+  font-weight: bold;
+  color: midnightblue;
+  padding: 50px 250px 0 300px;
+  text-align: center;
+  font-style: italic;
+}
+
+.img-contain-two p{
+  font-weight: 800;
+  color: midnightblue;
+  text-align: center;
+  font-style: italic;
+  padding-left: 100px;
+  font-size: 18px
+}
+
+@media(max-width:1201px){
+  body{
+    margin: auto
+  }
+}
