@@ -1,12 +1,25 @@
 //Main JavaScript Code
 $(document).ready(function(){
-    $('#submit-btn').parsley().on('click', validateForm)
-})
+    $('.readmore').on('click', showBlog);
+    $('.readless').on('click', hideBlog);
+    $('.scroll').jscroll();
+});
 
-function validateForm(){
-   event.preventDefault();
-   $('form').parsley().on('field:validated', validateForm){
-       var ok = $('.parsley-error').length === 0;
-       $('.bs-callout-info').toggleClass('hidden', !ok);
-       $('.bs-callout-warning').toggleClass('hidden', ok);
-}}
+
+function showBlog(){
+    event.preventDefault();
+    $('#show-this-on-click').slideDown(2); 
+    $('.readmore').hide();
+    $('.readless').show();
+}
+
+function hideBlog(){
+    $('.hide').slideUp();
+    $('.readmore').show();
+}
+
+// function validateForm(){
+//    event.preventDefault();
+//    console.log('work');
+//    var ok = $('.parsley-error').length === 0;
+// }
