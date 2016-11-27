@@ -33,10 +33,11 @@
 
 /*Small Mobile*/
 body{
+  max-width: 2000px;
   width: 100%;
   height: 960px;
   padding:0;
-  margin: auto;
+  margin: 0 auto;
   background-color: lightgrey;
   color: darkgray;
   font-family: 'Open Sans'; 
@@ -64,7 +65,7 @@ header nav ul li{
   font-weight: bold;
   list-style-type: none;
   padding: 0 0 0 30px;
-    position: relative;
+  position: relative;
   padding-left: 1.25em;
 }
 
@@ -95,8 +96,8 @@ nav a:hover{
   font-style: italic;
 }
 
-button{
-  margin: 0;
+.button{
+  width: 162px;
   background-color: midnightblue;
   color: darkgray;
   font-size: 20px;
@@ -106,7 +107,7 @@ button{
   outline: none;
 }
 
-button:hover{
+.button:hover{
   background-color: white;
   color: midnightblue;
   border: 2px solid midnightblue;
@@ -138,6 +139,15 @@ h3 div a{
   margin-top: 50px;
 }
 
+.img-contain div a{
+  text-decoration: none;
+}
+
+section{
+  width: 500px;
+
+  }
+
 .img-contain-two{
   margin: auto;
   width: 640px;
@@ -146,11 +156,11 @@ h3 div a{
   background-size: cover;
 }
 
-section ul li{
+/*section ul li{
   list-style-type: none;
-}
+}*/
 
-section h2{
+/*section h2{
   color: midnightblue;
   padding-left: 10px
 }
@@ -158,7 +168,7 @@ section h2{
 section ul li{
   color: midnightblue;
   padding-right: 192px;
-}
+}*/
 
 .img-contain-two p.quote{
   font-weight: bold;
@@ -206,7 +216,8 @@ footer a{
 .social-media{
   display: flex;
   justify-content: center;
-  padding-top: 50px
+  padding-top: 50px;
+  color: white;
 }
 
 .social-media a{
@@ -231,9 +242,10 @@ footer a{
 /*----------------------Mobile----------------------*/
 @media(min-width: 750px){
 body{
+  max-width: 
   width: 100%;
   padding:0;
-  margin: auto;
+  margin: 0 auto;
   background-color: lightgrey;
   color: darkgray;
   font-family: 'Open Sans'; 
@@ -277,14 +289,14 @@ header nav ul li{
   margin-top: 50px;
 }
 
-section h2{
+/*section h2{
   font-size: 35px;
   color: midnightblue;
   padding-left: 250px;
   padding-top: 50px;
-}
+}*/
 
-section ul{
+/*section ul{
   padding-bottom: 50px
 }
 
@@ -296,7 +308,7 @@ section ul li{
   padding-right: 100px;
    color: midnightblue;
   padding-left: 60px;
-}
+}*/
 
 .img-contain-two{
   margin: auto;
@@ -382,25 +394,21 @@ header nav ul li{
   margin-top: 50px;
 }
 
+section #about{
+  width: 500px;
+  border-radius: 50px;
+  background-color: #BCAF81
+}
+
 section h2{
   font-size: 35px;
   color: midnightblue;
-  padding-left: 482px;
-  padding-top: 50px;
 }
 
-section ul{
-  padding-bottom: 50px
-}
 
 section ul li{
-  display: flex;
-  justify-content: center;
-  align-items: center;
   list-style-type: none;
-  padding-right: 100px;
-   color: midnightblue;
-  padding-left: 60px;
+  color: midnightblue;
   font-size: 20px
 }
 
