@@ -1,5 +1,5 @@
 //Main JavaScript Code
-<<<<<<< HEAD
+
 $('.readmore').on('click', function(){
     event.preventDefault();
     $(this).next().slideToggle(400);
@@ -15,7 +15,7 @@ $('.readmore').on('click', function(){
 //     $('.readmore').hide();
 //     $('.readless').show();
 // }
-=======
+
 $(document).ready(function(){
     $('.readmore').on('click', showBlog);
     $('.readless').on('click', hideBlog);
@@ -29,7 +29,6 @@ function showBlog(){
     $('.readmore').hide();
     $('.readless').show();
 }
->>>>>>> 24a315af894b0aca9fc22ff181031f55ec2863b3
 
 function hideBlog(){
     $('.hide').slideUp();
