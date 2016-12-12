@@ -7,3 +7,20 @@
   };
   firebase.initializeApp(config);
     
+    $(documentready(function(){
+      var recordsAppReference = firebase.database();
+
+
+
+
+      recordsAppReference.ref('').on('value'), function(results){
+        
+
+
+    results.forEach(function(res,i){
+      var record = res.exportVal();
+
+      $('body').append('<p>'+record.id);
+    })
+      }
+    }))
