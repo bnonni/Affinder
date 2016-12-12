@@ -1,17 +1,19 @@
 //Main JavaScript Code
-$(document).ready(function(){
-    $('.readmore').on('click', showBlog);
-    $('.readless').on('click', hideBlog);
-    $('.scroll').jscroll();
+$('.readmore').on('click', function(){
+    event.preventDefault();
+    $(this).next().slideToggle(400);
 });
 
+    $('.readless').on('click', hideBlog);
+    
 
-function showBlog(){
-    event.preventDefault();
-    $('#show-this-on-click').slideDown(2); 
-    $('.readmore').hide();
-    $('.readless').show();
-}
+
+// function showBlog(){
+//     event.preventDefault();
+//     $('#show-this-on-click').slideDown(2); 
+//     $('.readmore').hide();
+//     $('.readless').show();
+// }
 
 function hideBlog(){
     $('.hide').slideUp();
