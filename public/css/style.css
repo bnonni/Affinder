@@ -246,6 +246,10 @@ footer a{
 /*----------------------Mobile----------------------*/
 @media(min-width: 750px){
 body{
+<<<<<<< HEAD
+=======
+  max-width: 
+>>>>>>> 24a315af894b0aca9fc22ff181031f55ec2863b3
   width: 100%;
   padding:0;
   margin: 0 auto;
