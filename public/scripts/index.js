@@ -16,12 +16,9 @@ $('.readmore').on('click', function(){
 //     $('.readless').show();
 // }
 
-$(document).ready(function(){
+
     $('.readmore').on('click', showBlog);
     $('.readless').on('click', hideBlog);
-    $('.scroll').jscroll();
-});
-
 
 function showBlog(){
     event.preventDefault();
