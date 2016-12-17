@@ -1,33 +1,67 @@
-#main-contain h1 a{
+/*Pop Up Styles*/
+
+
+/*App Styles*/
+#affButton{
   font-size: 18px;
   position: absolute;
   left: 5px;
   top: 1px;
   text-decoration: none;
   color: white;
+  background-color: black;
+  border:1px black solid;
+  /*padding: 50px 150px 46px 50px;*/
 }
 
 .leftSidePopOut1{
     width: 250px;
     height: 100%;
-    border: 1px darkgray solid;
+    border: 1px black solid;
     background-color: black;
-    padding-top: 50px;
+    /*padding-top: 50px;*/
     display: none;
+    position: relative;
+    float: left;
+}
+
+#companyDiv{
+    display: flex;
+    justify-content: center;
+    padding: 5px 20px 20px 20px;
+}
+
+#companyDiv img{
+    text-align: center;
 }
 
 #newSitesDiv{
     border: 1px darkgray solid;
     margin: 20px 0px 20px 0px;
-    padding: 40px;
-}
-
-#categoriesDiv ol li{
-    
+    padding: 20px 0px 20px 5px;
+    background-color: darkgray;
+    color:black;
+    text-align: center;
 }
 
 .catLinks{
     text-decoration: none;
     color: white;
     padding: 0px 0px 0px 10px;
+}
+
+#topTray{
+    width: 1435px;
+    text-align: center;
+    border: 1px black solid;
+    padding: 49px 0 49px 0;
+    background-color: black;
+    
+}
+
+#headlines{
+    display: flex;
+    align-content: flex-start;
+    justify-content: flex-end;
+    margin-right: 50px
 }

@@ -1,16 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
 <head>
-    <meta charset="UTF-8">
+    <meta charset='UTF-8'>
     <title>Affinder Demo</title>
-    <link type=text/css rel="stylesheet" href="css/demo.css">
-    <link type=text/css rel="stylesheet" href="css/style.css">
-    <link type=text/css rel="stylesheet" href="css/normalize.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link type=text/css rel='stylesheet' href='css/demo.css'>
+    <link type=text/css rel='stylesheet' href='css/style.css'>
+    <link type=text/css rel='stylesheet' href='css/normalize.css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'>
 </head>
 <body>
     <div id='main-contain'>
-     <h1><a href="#" id='affButton'>Affinder</a></h1>
             <!--<header>
                     <nav>
                         <ul>
@@ -23,9 +22,18 @@
                     </nav>
             </header>-->
     </div>
+                <!--Pop up loader-->
+        <div id='my_popup'>
+            <h1>Top New Sites</h1>
+            <p></p>
+        </div>
+        <div id='topTray'>
+            <h1><a href="#" id='affButton'>Affinder</a></h1>
+        </div>
+
     <div class='leftSidePopOut1'>
-        Company Name Here
-        <div id='newSitesDiv'>xxx New Sites Found</div>
+        <div id='companyDiv'><img src='images/360i.png' /></div>
+        <div id='newSitesDiv'><a href='#'>New Sites</a></div>
         <div id='categoriesDiv'>Categories
             <ol>
                 <li><a href='#' class='catLinks'>Retail</a></li>
@@ -33,11 +41,31 @@
                 <li><a href='#' class='catLinks'>Health</a></li>
                 <li><a href='#' class='catLinks'>Finance</a></li>
             </ol>
-        <a href=# class='catLinks'>See More</a>
+                <a href='#' class='catLinks'>See More</a>
         </div>
     </div>
+    <div id='mainDiv'>
+        <article class='article'></article>
+        <article></article>
+        <article></article>
+        <article></article>
+        <article></article>
+        <article></article>
+        <article></article>
+        <article></article>
+        <article></article>
+        <article></article>
+    </div>
 </body>
-<script src="scripts/jquery-3.1.0.min (1).js"></script>
-<script src="simple-webcrawler-javascript/crawler.js"/></script>
-<script src="scripts/index.js"/></script>
+<script src='scripts/jquery-3.1.0.min (1).js'></script>
+<script src='scripts/index.js'/></script>
+<script src="scripts/popup-overlay/jquery.popupoverlay.js"></script>
+ <script>
+            $(document).ready(function() {
+
+                // Initialize the plugin
+                $('#my_popup').popup();
+
+            });
+        </script>
 </html>

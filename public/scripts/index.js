@@ -2,30 +2,33 @@
 
 $('.readmore').on('click', function(){
     event.preventDefault();
-    $(this).next().slideToggle(400);
+    $(this).next().slideToggle(screenLeft);
 });
 
-$('#affButton').on('click', function(){
-    $('.leftSidePopOut1').slideToggle();
+$('#affButton').on('click', () => {
+    $('.leftSidePopOut1').slideToggle(screenLeft);
 })
 
-var similarWeb = "https://api.similarweb.com/v1/website/retailmenot.com/total-traffic-and-engagement/visits?api_key={c19048a701552d0e78c9562b42222d2b}&start_date=2016-10&end_date=2016-11&main_domain_only=false&granularity=monthly"
+$('#newSitesDiv a').on('click', () => {
+    console.log('...');
+    $('#my_popup').show();
+})
 
-//var apiKey = 'c19048a701552d0e78c9562b42222d2b';
+var mockEndPoint = 'https://webhose.io/search?token=ec896f02-e244-4b52-b58a-7f5f1b3fd557&format=json&q=%22Affiliate%20Marketing%22';
 
 $.ajax({
-        url: similarWeb,
+        url: mockEndPoint,
         type: 'GET',
         success: function(data) {
-            try{
-                data.forEach(function(article1,index){
-                    console.log(data);
+            console.log(data);
+            // try{
+                $.each(function(article1,index){
                     })
-                }catch(event){
-                alert('Please refresh and try again.')
+                // }catch(event){
+                // alert('Please refresh and try again.')
             }//end forEach
         }//end success function
-    });//end ajax call
+    );//end ajax call
 
 // function validateForm(){
 //    event.preventDefault();
