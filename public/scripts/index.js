@@ -5,32 +5,27 @@ $('.readmore').on('click', function(){
     $(this).next().slideToggle(400);
 });
 
-    $('.readless').on('click', hideBlog);
-    
+$('#affButton').on('click', function(){
+    $('.leftSidePopOut1').slideToggle();
+})
 
+var similarWeb = "https://api.similarweb.com/v1/website/retailmenot.com/total-traffic-and-engagement/visits?api_key={c19048a701552d0e78c9562b42222d2b}&start_date=2016-10&end_date=2016-11&main_domain_only=false&granularity=monthly"
 
-// function showBlog(){
-//     event.preventDefault();
-//     $('#show-this-on-click').slideDown(2); 
-//     $('.readmore').hide();
-//     $('.readless').show();
-// }
+//var apiKey = 'c19048a701552d0e78c9562b42222d2b';
 
-
-    $('.readmore').on('click', showBlog);
-    $('.readless').on('click', hideBlog);
-
-function showBlog(){
-    event.preventDefault();
-    $('#show-this-on-click').slideDown(2); 
-    $('.readmore').hide();
-    $('.readless').show();
-}
-
-function hideBlog(){
-    $('.hide').slideUp();
-    $('.readmore').show();
-}
+$.ajax({
+        url: similarWeb,
+        type: 'GET',
+        success: function(data) {
+            try{
+                data.forEach(function(article1,index){
+                    console.log(data);
+                    })
+                }catch(event){
+                alert('Please refresh and try again.')
+            }//end forEach
+        }//end success function
+    });//end ajax call
 
 // function validateForm(){
 //    event.preventDefault();
