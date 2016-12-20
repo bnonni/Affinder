@@ -7,20 +7,12 @@
   };
   firebase.initializeApp(config);
     
-    $(documentready(function(){
+    $(document).ready(function(){
       var recordsAppReference = firebase.database();
-
-
-
-
-      recordsAppReference.ref('').on('value'), function(results){
-        
-
-
-    results.forEach(function(res,i){
-      var record = res.exportVal();
-
-      $('body').append('<p>'+record.id);
+   recordsAppReference.ref('records').on('value',function(results){
+      var allRecords = ref.exportVal();
+      allRecords.forEach(function(rec,index){
+        $('#myPopup').append("<p>"+rec.contact+"<br>"+rec.email+"<br>"+rec.phone+"<br>"+rec.publisher+"</p>");
+});
     })
-      }
-    }))
+});

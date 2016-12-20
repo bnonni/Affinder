@@ -1,34 +1,48 @@
 //Main JavaScript Code
+$(document).ready( () => {
+    $('.leftSidePopOut1').slideToggle(1000);
+})
 
-$('.readmore').on('click', function(){
+$('#crawlSitesDiv').on('click', () => {
+    $('.crawlSitesDropDown').slideToggle(1000);
+    setTimeout(function(){$('.crawlSitesDropDown section').html('Visiting page https://www.officialcouponcode.com' + '<p>' + 'Status code: 200' + '</p>' + 'Found 253 relative links on page' + '<p>' + 'Visiting page https://www.officialcouponcode.com/store/smartsource/'+ '<p>'+ 'Status code: 200' +'</p>' + 'Found 220 relative links on page'+ 'Visiting page https://www.officialcouponcode.com' + '<p>' + 'Status code: 200' + '</p>' + 'Found 253 relative links on page' + '<p>' + 'Visiting page https://www.officialcouponcode.com/store/smartsource/'+ '<p>'+ 'Status code: 200' +'</p>' + 'Found 220 relative links on page')}, 1000);})
+
+function myFunction() {
+    var popup = document.getElementById('myPopup');
+    popup.classList.toggle('show');
+}
+
+$('.readmore').on('click', function() {
     event.preventDefault();
     $(this).next().slideToggle(screenLeft);
 });
 
-$('#affButton').on('click', () => {
-    $('.leftSidePopOut1').slideToggle(screenLeft);
-})
-
-$('#newSitesDiv a').on('click', () => {
-    console.log('...');
-    $('#my_popup').show();
-})
-
-var mockEndPoint = 'https://webhose.io/search?token=ec896f02-e244-4b52-b58a-7f5f1b3fd557&format=json&q=%22Affiliate%20Marketing%22';
+var webHose = 'https://webhose.io/search?token=ec896f02-e244-4b52-b58a-7f5f1b3fd557&format=json&q=%22affiliate%20marketing%22%20language%3A(english)%20performance_score%3A%3E0%20(site_type%3Anews%20OR%20site_type%3Ablogs)&ts=1479495594014';
 
 $.ajax({
-        url: mockEndPoint,
+        url: webHose,
         type: 'GET',
-        success: function(data) {
+        success: (data) => {
             console.log(data);
-            // try{
-                $.each(function(article1,index){
-                    })
-                // }catch(event){
-                // alert('Please refresh and try again.')
-            }//end forEach
+            try{
+             $.each(data.posts, function(i, item){
+                var posts = {
+
+                    headline : item.title,
+                    imageUrl : item.urlToImage, 
+                    description : item.description,
+                    postUrl : item.url
+                };   
+                $('#title' + i).html(posts.headline);
+                $('#postLink' + i).attr('href', posts.postUrl)
+
+             })
+                }catch(event){
+                 alert('Please refresh and try again.')
+            }//end .each
         }//end success function
-    );//end ajax call
+});//end ajax call
+
 
 // function validateForm(){
 //    event.preventDefault();

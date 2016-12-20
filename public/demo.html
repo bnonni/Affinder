@@ -9,63 +9,86 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'>
 </head>
 <body>
-    <div id='main-contain'>
-            <!--<header>
-                    <nav>
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="blog.html">Blog</a></li>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="demo.html">Demo</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                        </ul>
-                    </nav>
-            </header>-->
-    </div>
-                <!--Pop up loader-->
-        <div id='my_popup'>
-            <h1>Top New Sites</h1>
-            <p></p>
-        </div>
+    <div id='main-contain'></div>
         <div id='topTray'>
-            <h1><a href="#" id='affButton'>Affinder</a></h1>
+            <h1><a href="index.html" id='affButton'>Affinder</a></h1>
+            <div id='crawlSitesDiv'><a href='#'>Crawl for Sites</a></div>
         </div>
-
     <div class='leftSidePopOut1'>
         <div id='companyDiv'><img src='images/360i.png' /></div>
-        <div id='newSitesDiv'><a href='#'>New Sites</a></div>
-        <div id='categoriesDiv'>Categories
+        <a href='#'><div id='newSitesDiv'><div class="popup" onclick="myFunction()">See Database
+            <span class="popuptext" id="myPopup">
+                <ul><li>"publisher":"odnoklassniki.ru"</li>
+                <li>"contact":"Christopher Gonzalez"</li>
+                <li>"email":"cgonzalez0@live.com"</li>
+                <li>"phone":"92-(884)963-8307"}</li>
+                <li>"publisher":"businessweek.com"</li>
+               </ul></span></div></div></a>
+        <br />
+        <!--<div id='categoriesDiv'>Categories
             <ol>
                 <li><a href='#' class='catLinks'>Retail</a></li>
                 <li><a href='#' class='catLinks'>Travel</a></li>
                 <li><a href='#' class='catLinks'>Health</a></li>
                 <li><a href='#' class='catLinks'>Finance</a></li>
             </ol>
-                <a href='#' class='catLinks'>See More</a>
+               <a href='#' class='catLinks'><div class="popup" onclick="myFunction()">See More
+            <span class="popuptext" id="myPopup2"> See More</span></div></div></a>-->
         </div>
+        <br />
     </div>
+     <div class='crawlSitesDropDown'>
+          <section>                                                                               
+            </section>
+     </div>
     <div id='mainDiv'>
-        <article class='article'></article>
-        <article></article>
-        <article></article>
-        <article></article>
-        <article></article>
-        <article></article>
-        <article></article>
-        <article></article>
-        <article></article>
-        <article></article>
+        <h2>Latest Headlines</h2>
+        <article class='article'>
+             <section id='articleContent0'>
+                <a id=postLink0 href="#" target='_blank'><h3 id='title0'></h3></a>
+            </section>
+        </article>
+        <article class='article'>
+            <section id='articleContent1'>
+                <a id=postLink1 href="#" target='_blank'><h3 id='title1'></h3></a>
+            </section>
+        </article>
+        <article class='article'>
+             <section id='articleContent2'>
+                <a id=postLink2 href="#" target='_blank'><h3 id='title2'></h3></a>
+            </section>
+        </article>
+        <article class='article'> 
+            <section id='articleContent3'>
+                <a id=postLink3 href="#" target='_blank'><h3 id='title3'></h3></a>
+            </section>
+        </article>
+        <article class='article'>
+            <section id='articleContent4'>
+                <a id=postLink4 href="#" target='_blank'><h3 id='title4'></h3></a>
+            </section>
+        </article>
+        <article class='article'>
+            <section id='articleContent5'>
+                <a id=postLink5 href="#" target='_blank'><h3 id='title5'></h3></a>
+            </section>
+        </article>
+        <article class='article'>
+               <a id=postLink7 href="#" target='_blank'><h3 id='title7'></h3></a>
+        </article>
+        <article class='article'> 
+                <a id=postLink8 href="#" target='_blank'><h3 id='title8'></h3></a>
+        </article>
+        <article class='article'> 
+                <a id=postLink9 href="#" target='_blank'><h3 id='title9'></h3></a>
+        </article>
+        <article class='article'> 
+                <a id=postLink10 href="#" target='_blank'><h3 id='title10'></h3></a>
+        </article>
     </div>
 </body>
 <script src='scripts/jquery-3.1.0.min (1).js'></script>
+<script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+<script src='scripts/crawler.js'/></script>
 <script src='scripts/index.js'/></script>
-<script src="scripts/popup-overlay/jquery.popupoverlay.js"></script>
- <script>
-            $(document).ready(function() {
-
-                // Initialize the plugin
-                $('#my_popup').popup();
-
-            });
-        </script>
 </html>

@@ -2,7 +2,7 @@ var request = require('request');
 var cheerio = require('cheerio');
 var URL = require('url-parse');
 
-var START_URL = "https://www.google.com/search?q=Steve+Biko&oi=ddle&ct=steve-bikos-70th-birthday-5759174941081600-hp&hl=en#hl=en&q=coupon+sites";
+var START_URL = "https://www.officialcouponcode.com";
 var SEARCH_WORD = "stemming";
 var MAX_PAGES_TO_VISIT = 10;
 
@@ -64,7 +64,7 @@ function searchForWord($, word) {
 
 function collectInternalLinks($) {
     var relativeLinks = $("a[href^='/']");
-    $('#mainDiv').append("Found " + relativeLinks.length + " relative links on page");
+    console.log("Found " + relativeLinks.length + " relative links on page");
     relativeLinks.each(function() {
         pagesToVisit.push(baseUrl + $(this).attr('href'));
     });
