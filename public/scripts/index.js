@@ -3,6 +3,7 @@ $(document).ready( () => {
     $('.leftSidePopOut1').slideToggle(1000);
     console.log('loaded');
     AuthUser();
+    validateForm();
 })
 
 $('#crawlSitesDiv').on('click', () => {
@@ -57,14 +58,12 @@ function AuthUser(){
     })
 }
 
-// function SaveResults(user, isWinner) {
-//     var database = firebase.database();
-//     var userData = firebase.database().ref('/users/' + user).once('value').then(function(snapshot){
-//     });
-// }
 
-// function validateForm(){
-//    event.preventDefault();
-//    console.log('work');
-//    var ok = $('.parsley-error').length === 0;
-// }
+//  var database = firebase.database().ref('users/' + user).set()
+
+
+function validateForm(){
+   event.preventDefault();
+   console.log('work');
+   var ok = $('.parsley-error').length === 0;
+}
