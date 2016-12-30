@@ -3,7 +3,7 @@ $(document).ready( () => {
     $('.leftSidePopOut1').slideToggle(1000);
     console.log('loaded');
     AuthUser();
-    validateForm();
+    // validateForm();
 })
 
 $('#crawlSitesDiv').on('click', () => {
@@ -62,8 +62,8 @@ function AuthUser(){
 //  var database = firebase.database().ref('users/' + user).set()
 
 
-function validateForm(){
-   event.preventDefault();
-   console.log('work');
-   var ok = $('.parsley-error').length === 0;
-}
+// function validateForm(){
+//    event.preventDefault();
+//    console.log('work');
+//    var ok = $('.parsley-error').length === 0;
+// }
