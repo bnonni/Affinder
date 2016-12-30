@@ -57,11 +57,11 @@ function AuthUser(){
     })
 }
 
-function SaveResults(user, isWinner) {
-    var database = firebase.database();
-    var userData = firebase.database().ref('/users/' + user).once('value').then(function(snapshot){
-    });
-}
+// function SaveResults(user, isWinner) {
+//     var database = firebase.database();
+//     var userData = firebase.database().ref('/users/' + user).once('value').then(function(snapshot){
+//     });
+// }
 
 // function validateForm(){
 //    event.preventDefault();
