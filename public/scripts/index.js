@@ -1,6 +1,8 @@
 //Main JavaScript Code
 $(document).ready( () => {
     $('.leftSidePopOut1').slideToggle(1000);
+    console.log('loaded');
+    AuthUser();
 })
 
 $('#crawlSitesDiv').on('click', () => {
