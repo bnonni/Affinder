@@ -12,7 +12,7 @@ function myFunction() {
     popup.classList.toggle('show');
 }
 
-$('.readmore').on('click', function() {
+$('.readmore').on('click', () => {
     event.preventDefault();
     $(this).next().slideToggle(screenLeft);
 });
@@ -25,7 +25,7 @@ $.ajax({
         success: (data) => {
             console.log(data);
             try{
-             $.each(data.posts, function(i, item){
+             $.each(data.posts, (i, item) => {
                 var posts = {
 
                     headline : item.title,
@@ -44,10 +44,10 @@ $.ajax({
 });//end ajax call
 
 
-var userChoice = '';
+var data = '';
 
 function selectItem(event){
-    userChoice = event.currentTarget.dataset.value;
+    data = event.currentTarget.dataset.value;
     $('.selected').removeClass('selected');
     $(event.currentTarget).addClass('selected');
 }
