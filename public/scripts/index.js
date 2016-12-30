@@ -44,12 +44,21 @@ $.ajax({
 });//end ajax call
 
 
-var data = '';
+//Google Authentication
+function AuthUser(){
+    var provider = new firebase.auth.GoogleAuthProvider();
+    firebase.auth().signInWithPopup(provider).then(function(result){
+            var user = result.user;
+            console.log(user.displayName);
+    }).catch(function (error){
+        console.log(error);
+    })
+}
 
-function selectItem(event){
-    data = event.currentTarget.dataset.value;
-    $('.selected').removeClass('selected');
-    $(event.currentTarget).addClass('selected');
+function SaveResults(user, isWinner) {
+    var database = firebase.database();
+    var userData = firebase.database().ref('/users/' + user).once('value').then(function(snapshot){
+    });
 }
 
 // function validateForm(){
