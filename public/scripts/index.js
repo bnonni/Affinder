@@ -5,7 +5,7 @@ $(document).ready( () => {
 
 $('#crawlSitesDiv').on('click', () => {
     $('.crawlSitesDropDown').slideToggle(1000);
-    setTimeout(function(){$('.crawlSitesDropDown section').html('Visiting page https://www.officialcouponcode.com' + '<p>' + 'Status code: 200' + '</p>' + 'Found 253 relative links on page' + '<p>' + 'Visiting page https://www.officialcouponcode.com/store/smartsource/'+ '<p>'+ 'Status code: 200' +'</p>' + 'Found 220 relative links on page'+ 'Visiting page https://www.officialcouponcode.com' + '<p>' + 'Status code: 200' + '</p>' + 'Found 253 relative links on page' + '<p>' + 'Visiting page https://www.officialcouponcode.com/store/smartsource/'+ '<p>'+ 'Status code: 200' +'</p>' + 'Found 220 relative links on page')}, 1000);})
+    setTimeout(() => {$('.crawlSitesDropDown section').html('Visiting page https://www.officialcouponcode.com' + '<p>' + 'Status code: 200' + '</p>' + 'Found 253 relative links on page' + '<p>' + 'Visiting page https://www.officialcouponcode.com/store/smartsource/'+ '<p>'+ 'Status code: 200' +'</p>' + 'Found 220 relative links on page'+ 'Visiting page https://www.officialcouponcode.com' + '<p>' + 'Status code: 200' + '</p>' + 'Found 253 relative links on page' + '<p>' + 'Visiting page https://www.officialcouponcode.com/store/smartsource/'+ '<p>'+ 'Status code: 200' +'</p>' + 'Found 220 relative links on page')}, 1000);})
 
 function myFunction() {
     var popup = document.getElementById('myPopup');
@@ -43,6 +43,14 @@ $.ajax({
         }//end success function
 });//end ajax call
 
+
+var userChoice = '';
+
+function selectItem(event){
+    userChoice = event.currentTarget.dataset.value;
+    $('.selected').removeClass('selected');
+    $(event.currentTarget).addClass('selected');
+}
 
 // function validateForm(){
 //    event.preventDefault();

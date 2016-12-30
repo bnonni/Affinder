@@ -2,7 +2,7 @@ var request = require('request');
 var cheerio = require('cheerio');
 var URL = require('url-parse');
 
-var START_URL = "https://www.officialcouponcode.com";
+var START_URL = "https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=new%20coupon%20sites";
 var SEARCH_WORD = "stemming";
 var MAX_PAGES_TO_VISIT = 10;
 

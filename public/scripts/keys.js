@@ -3,7 +3,7 @@
     apiKey: "AIzaSyBbvDFOaAkC7T3uMTHamWJPJXzI9sItIz0",
     authDomain: "affinder-e1943.firebaseapp.com",
     databaseURL: "https://affinder-e1943.firebaseio.com",
-    storageBucket: "",
+    storageBucket: "affinder-e1943.appspot.com",
   };
   firebase.initializeApp(config);
     
