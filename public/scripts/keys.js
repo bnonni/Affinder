@@ -7,8 +7,12 @@
   };
   firebase.initializeApp(config);
 
-var storageRef = storage.ref();
-var storage = firebase.storage();
+storeResults => {
+  var database = firebase.database();
+  var storageRef = storage.ref();
+  var storage = firebase.storage();
+}
+
 
     
 //     $(document).ready(function(){
