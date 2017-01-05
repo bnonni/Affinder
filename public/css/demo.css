@@ -83,20 +83,34 @@
 
 .crawlSitesDropDown{
     display: none;
-    width: 670px;
-    height: 500px;
+    width: 500px;
+    height: 200px;
     border: 1px black solid;
     background-color: black;
     margin-left: 700px;
-    float: right;
     position: absolute;
     top: 80px;
+    right: 50px;
     border-radius: 5px
 }
 
 .crawlSitesDropDown section p{
     font-size: 12px;
 }
+/* Search bar */
+.crawlSitesDropDown input{
+     width: 300px;
+    margin: 5px;
+}
+
+#searchContainer img{
+    height: 33px;
+    position: absolute;
+    right: 156px;
+    top: 1px;
+
+}
+
 
 #companyDiv{
     display: flex;

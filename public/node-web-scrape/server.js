@@ -5,11 +5,11 @@ var request = require('request');
 var cheerio = require('cheerio');
 var app     = express();
 
-app.get('/scrape', function(req, res){
+app.get('/scrape', (req, res)=>{
 
   url = 'http://www.imdb.com/title/tt4158110/?ref_=nv_sr_1';
 
-    request(url, function(error, response, html){
+    request(url, (error, response, html)=>{
         if(!error){
             var $ = cheerio.load(html);
 
@@ -17,7 +17,7 @@ app.get('/scrape', function(req, res){
             var json = { title : "", release : "", rating : ""};
 
 
-            $('.title_wrapper h1').filter(function(){
+            $('.title_wrapper h1').filter(()=>{
             var data = $(this);
 
             title = data.text();
@@ -26,7 +26,7 @@ app.get('/scrape', function(req, res){
 
             })
 
-            $('div.subtext a').filter(function(){
+            $('div.subtext a').filter(()=>{
             var data = $(this);
 
             release = data.children().first().text();
@@ -35,7 +35,7 @@ app.get('/scrape', function(req, res){
 
             });
 
-            $('div.ratingValue').filter(function(){
+            $('div.ratingValue').filter(()=>{
                 var data = $(this);
 
             rating = data.children().first().text();
@@ -43,7 +43,7 @@ app.get('/scrape', function(req, res){
                 json.rating = rating;
             })
         }
-        fs.writeFile('output.json', JSON.stringify(json, null, 4), function(err){
+        fs.writeFile('output.json', JSON.stringify(json, null, 4), (err)=>{
 
     console.log('File successfully written! - Check your project directory for the output.json file');
 

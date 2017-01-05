@@ -7,11 +7,12 @@
   };
   firebase.initializeApp(config);
 
-storeResults => {
-  var database = firebase.database();
-  var storageRef = storage.ref();
-  var storage = firebase.storage();
+  function saveKeywords(keyword) {
+  firebase.database().ref('search/' + keyword).set({
+    search: keyword,
+  });
 }
+
 
 
     
