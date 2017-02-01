@@ -7,7 +7,7 @@ var app     = express();
 
 app.get('/scrape', (req, res)=>{
 
-  url = 'http://www.imdb.com/title/tt4158110/?ref_=nv_sr_1';
+  var url = 'http://www.imdb.com/title/tt4158110/?ref_=nv_sr_1';
 
     request(url, (error, response, html)=>{
         if(!error){
@@ -17,7 +17,7 @@ app.get('/scrape', (req, res)=>{
             var json = { title : "", release : "", rating : ""};
 
 
-            $('.title_wrapper h1').filter(()=>{
+            $('.title_wrapper h1').filter(function(){
             var data = $(this);
 
             title = data.text();
@@ -26,7 +26,7 @@ app.get('/scrape', (req, res)=>{
 
             })
 
-            $('div.subtext a').filter(()=>{
+            $('div.subtext a').filter(function(){
             var data = $(this);
 
             release = data.children().first().text();
@@ -35,7 +35,7 @@ app.get('/scrape', (req, res)=>{
 
             });
 
-            $('div.ratingValue').filter(()=>{
+            $('div.ratingValue').filter(function(){
                 var data = $(this);
 
             rating = data.children().first().text();
@@ -43,7 +43,7 @@ app.get('/scrape', (req, res)=>{
                 json.rating = rating;
             })
         }
-        fs.writeFile('output.json', JSON.stringify(json, null, 4), (err)=>{
+        fs.writeFile('output.json', JSON.stringify(json, null, 4), function(err){
 
     console.log('File successfully written! - Check your project directory for the output.json file');
 

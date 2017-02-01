@@ -16,7 +16,7 @@ function myFunction() {
     popup.classList.toggle('show');
 }
 
-$('.readmore').on('click', () => {
+$('.readmore').on('click', function(){
     event.preventDefault();
     $(this).next().slideToggle();
 });

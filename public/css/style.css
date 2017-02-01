@@ -295,26 +295,14 @@ header nav ul li{
   margin-top: 50px;
 }
 
-/*section h2{
+section h2{
   font-size: 35px;
   color: midnightblue;
-  padding-left: 250px;
-  padding-top: 50px;
-}*/
-
-/*section ul{
-  padding-bottom: 50px
 }
 
-section ul li{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  list-style-type: none;
-  padding-right: 100px;
-   color: midnightblue;
-  padding-left: 60px;
-}*/
+#class ul li{
+margin: auto;
+}
 
 .img-contain-two{
   margin: auto;

@@ -7,12 +7,6 @@
   };
   firebase.initializeApp(config);
 
-  function saveKeywords(keyword) {
-  firebase.database().ref('search/' + keyword).set({
-    search: keyword,
-  });
-}
-
 
 
     
